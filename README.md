@@ -1,41 +1,30 @@
-# Picoyplaca
+# Pico y Placa Predictor
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/picoyplaca`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+## Requirements
+* ruby 2.3.1
+* bundler 1.13.1
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Clone this repository
 
-```ruby
-gem 'picoyplaca'
-```
+    $ git clone https://github.com/sdbcmh/picoyplaca.git
 
-And then execute:
+Inside the ```picoyplaca``` folder, execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install picoyplaca
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+To check if a car has or not a 'Pico y Placa' restriction, enter the time, date and plate number in the file ```spec/picoyplaca_spec.rb```.  
 
-## Development
+Then, execute:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+    $ bundle exec rspec
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/picoyplaca.
+**If the test fail, your car has restriction, otherwise not.**
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
